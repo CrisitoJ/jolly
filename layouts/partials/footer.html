@@ -1,7 +1,14 @@
 </main>
-	
-<footer>
-	<p>&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+
+<p>Powered By <a href="https://gohugo.io/">Hugo</a> Written by CrisitoJ.</p>
+<footer class="site-footer">
+      {{ range.Site.Menus.social -}}
+      <li class="li-media">
+        <a href="{{ .URL }}" target="_blank" rel="noopener noreferrer">
+          {{ partial "icon.html" (dict "icon" .Pre "title" .Name ) }}
+        </a>
+      </li>
+      {{- end }}
 </footer>
 
 </body>

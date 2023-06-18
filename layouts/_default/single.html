@@ -1,7 +1,14 @@
 {{ partial "header.html" . }}
 
+
 <h1>{{ .Title }}</h1>
+<p>{{ time.Format "Monday, Jan 2, 2006" "2015-01-21" }} </p>
+<hr>
 
 {{ .Content }}
 
+<hr>
+{{ partial "nextprev.html" . }}
 {{ partial "footer.html" . }}
+
+
