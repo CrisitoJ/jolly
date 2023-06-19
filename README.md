@@ -24,3 +24,8 @@ Set your own presentation on config.toml
     [[menu.pres]]
     name = "your presentation"
 ```
+Add your personal photo or gif with
+```bash
+    [[params]]
+    gif = "link"
+```
