@@ -25,7 +25,7 @@ img{
   margin-right: auto;
 }
 
-.dog-gif{
+.main-gif{
 	width: 100px;
 }
 
@@ -97,4 +97,5 @@ img{
 	display: flex;
   justify-content: center;
   align-items: center;
+	bottom: 0px;
 }
