@@ -1,6 +1,9 @@
 ### Jolly Hugo Theme
 Honestly, this is a combination(free software,you now) of [Luke Smith](https://github.com/LukeSmithxyz/lugo/tree/master) ,[Eric Murphy](https://github.com/ericmurphyxyz/ericmurphy.xyz/tree/master) and [Holy](https://github.com/serkodev/holy/tree/master) themes.
 
+![jolly](./photos/example.png)
+
+
 ### Features
 -   0 dependencies, just html, css and hugo
 -   categories section on main page
