@@ -4,7 +4,6 @@ Honestly, this is a combination(free software,you now) of [Luke Smith](https://g
 ### Features
 -   0 dependencies, just html, css and hugo
 -   categories section on main page
--   A beautiful dog as a main gif
 -   Custom presentation
 
 ```bash
