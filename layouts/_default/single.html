@@ -2,7 +2,9 @@
 
 
 <h1>{{ .Title }}</h1>
-<p>{{ time.Format "Monday, Jan 2, 2006" "2015-01-21" }} </p>
+<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+		{{ .Date.Format "January 2, 2006" }}
+	</time>
 <hr>
 
 {{ .Content }}
