@@ -1,14 +1,9 @@
 <header class="site-header">
   <nav class="site-nav">
-    <a class="logo" href="{{ .Site.BaseURL }}">
-			Home
-    </a>
-    <ul class="main-menu">
-      {{ range.Site.Menus.main }}
-      <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-    </ul>
+	<a class="nav-elm" href="{{ .Site.BaseURL }}">Home</a>
+    <a class="nav-elm" href="{{ .Site.BaseURL }}/blog">Blog</a>
+    <a class="nav-elm focus-nav" href="{{ .Site.BaseURL }}/contact">Contact</a>
+    <a class="nav-elm" href="{{ .Site.BaseURL }}/donate">Donate</a>
+  {{ partial "rss.html" . }}
   </nav>
 </header>

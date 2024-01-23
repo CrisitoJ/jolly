@@ -1,0 +1,11 @@
+<div class="latest-post">
+	<h2>Latest posts</h2>
+	{{ range ( first 3 ( where .Site.Pages "Type" "perri" ).ByDate ) }}
+  		<li class="li-categories">
+			<div class="div-categories">
+				<p >{{ .Date.Format "enero 02, 2006" }}</p>
+				<a href="{{ .Permalink }}" class="class-posts">{{ .Title }}</a>
+			</div>
+		</li>
+	{{ end }}
+</div>

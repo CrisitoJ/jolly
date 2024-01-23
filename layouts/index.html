@@ -1,21 +1,17 @@
 {{ partial "header.html" . }}
-<h1>CrisitoJ</h1>
 
-{{ partial "presentation.html" .}}
-
-<hr>
-	{{ partial "categories.html" . }}
-<hr>
-
-<div class="recent-post">
-	<h2>Recent post</h2>
-{{ range ( first 3 ( where .Site.Pages "Type" "posts" ).ByDate ) }}
-  <li><a href="{{ .Permalink }}" class="class-posts">{{ .Title }}</a></li>
-{{ end }}
-
+<div class="index-layout">
+	<h1>{{ .Title }} </h1>
+	<div class="bottom-index-layout">
+		<p class="index-presentation"> {{ .Site.Params.Presentation }}</p>
+		<img src="{{ .Site.Params.imagen }}" alt="Main image" class="main-image">
+	</div>
 </div>
 
-{{ partial "maingif.html" . }}
+
+{{ partial "latest.html" . }}
+
+{{ partial "categories.html" . }}
+
 
 {{ partial "footer.html" . }}
-
