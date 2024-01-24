@@ -1,6 +1,6 @@
 <div class="latest-post">
 	<h2>Latest posts</h2>
-	{{ range ( first 3 ( where .Site.Pages "Type" .Sites.Params.latests ).ByDate ) }}
+	{{ range ( first 3 ( where .Site.Pages "Type" .Site.Params.latests ).ByDate ) }}
   		<li class="li-categories">
 			<div class="div-categories">
 				<p >{{ .Date.Format "january 02, 2006" }}</p>
