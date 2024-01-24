@@ -1,33 +1,53 @@
-### Jolly Hugo Theme
-Honestly, this is a combination(free software,you now) of [Luke Smith](https://github.com/LukeSmithxyz/lugo/tree/master) ,[Eric Murphy](https://github.com/ericmurphyxyz/ericmurphy.xyz/tree/master) and [Holy](https://github.com/serkodev/holy/tree/master) themes.
-
-![jolly](./photos/example.png)
+# Jolly
+Lightweight and simple theme for Hugo.
+![jolly](./photos/main.png)
+![jolly](./photos/list.png)
 
 
 ### Features
--   0 dependencies, just html, css and hugo
--   categories section on main page
--   Custom presentation
+-   RRSS support.
+-   Categories and sections.
+-   Custom presentation.
+-   Next and prev tags for blogging.
+-   Responsive
 
+
+### Set up 
 ```bash
 git submodule add https://github.com/CrisitoJ/jolly themes/jolly
-
 ```
-
 ```bash
  #set up the theme adding this line on config.toml
  theme = "jolly"
-
 ```
 
-Set your own presentation on config.toml
+## Advanced configs
+Add your presentation on
 ```bash
     #for each paragraph
-    [[menu.pres]]
-    name = "your presentation"
+    [params]
+    presentation = "your presentation"
 ```
-Add your personal photo or gif with
+Add you personal photo
 ```bash
     [[params]]
     gif = "link"
 ```
+## Add categories:
+For each categorie you want to add to the main page add:
+```bash
+[[menu.categories]]
+ name = "category"
+ url = "/category"
+```
+## Add RSS links
+Firstly, you need to download the .SVG for each RSS you want to add, then add them into /assets/icons
+Then, you will be able to set up the RSS on your config.toml
+For each rss add:
+```bash
+[[menu.social]]
+  name = "GitHub"
+  pre = "github"
+  url = "https://github.com/myuser"
+```
+
